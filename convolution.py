@@ -18,7 +18,7 @@ import argparse
 # Example usage: python convolution.py -n car1.png
 
 parser = argparse.ArgumentParser(description='Convert RGB to GRAY')
-parser.add_argument('-name', '-n', type=str, default='car1.png')
+parser.add_argument('-name', '-n', type=str, default='mandrill.jpg')
 args = parser.parse_args()
 
 # ==================================================

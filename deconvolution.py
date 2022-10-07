@@ -111,7 +111,7 @@ def WienerDeconvoluition(input, motionLength, motionAngle, noiseSignalRatio, dis
 		imageMag = cv2.magnitude(inputFFT[:,:,0], inputFFT[:,:,1]) + 1
 		imageMag = cv2.log(imageMag)
 		imageMag = (imageMag - imageMag.min())/(imageMag.max() - imageMag.min())
-		imshow("Image Magnitude", np.uint8(255*imageMagimageMag))
+		imshow("Image Magnitude", np.uint8(255*imageMag))
 
 	
 	# Now we do the convolution by visiting each pixel, and
